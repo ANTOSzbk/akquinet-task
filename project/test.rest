@@ -1,0 +1,5 @@
+GET https://public-api.wordpress.com/rest/v1.1/sites/en.blog.wordpress.com/posts HTTP/1.1
+
+{
+    "number": 4
+}

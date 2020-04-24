@@ -1,0 +1,30 @@
+<a class="btn btn-primary mb-2" (click)="goBack()" role="button">« Back</a>
+<a class="btn btn-secondary mb-2 float-right" href="{{this.post.Url}}" role="button">External link »</a>
+<div class="card mb-3">
+    <img class="card-img-top" max-width="50%" src="{{this.post.thumbnailUrl}}" alt="Article thumbnail.">
+    <div class="card-body">
+        <h2 class="card-title border-bottom mb-4" [innerHTML]="this.post.title"></h2>
+        <p class="card-text" [innerHTML]="this.post.content"></p>
+        <p class="card-text"><small class="text-muted">Last modified {{this.post.lastModified}}</small></p>
+    </div>
+</div>
+<h2 class="text-center">{{this.totalComments}} Comments</h2>
+
+<div class="card" *ngFor="let comment of commentsArray">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-2">
+                <img src="{{comment.author.avatar_URL}}" class="img-fluid rounded-circle" />
+                <p class="text-secondary">{{getFromNow(comment.date)}}</p>
+            </div>
+            <div class="col-md-10">
+                <p>
+                    <a class="float-left"><strong>{{comment.author.name}}</strong></a>
+                </p>
+                <div class="clearfix"></div>
+                <p [innerHTML]="comment.content"></p>
+            </div>
+        </div>
+    </div>
+</div>
+<button class="btn btn-secondary" (click)="showMoreComments()">Show more comments</button>
