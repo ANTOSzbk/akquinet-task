@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  project:
+    image: node:alpine3.11
+    build: .
+    working_dir: /usr/src/app/project
+    volumes:
+      - ./project:/usr/src/app/project
+    environment:
+      NODE_ENV: development
+    command: npm run start
+    ports:
+      - '4200:4200'
