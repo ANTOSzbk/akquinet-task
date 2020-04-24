@@ -46,7 +46,7 @@ I used `moment` and `uikit` as libraries not provided in tasks.
 
 ## Thoughts
 
-Zadanie nie było trudne, lecz posiadało kilka trudności. Mam nadzieję, że podołałem.
+Zadanie nie było trudne, lecz posiadało kilka rzeczy nad którymi trzeba było poświęcić chwilę czasu. Mam nadzieję, że podołałem.
 
 # Frontend
 
