@@ -20,7 +20,7 @@ npm run start
 ```
 
 After installation and executing run script project is available at http://localhost:4200.
-Project is also available remotely at https://akquinet-task.antoszbk.xyz/ - my personal website.
+Project is also available remotely at https://akquinet-task.antoszbk.xyz/ - my personal domain.
 
 ## Information
 
